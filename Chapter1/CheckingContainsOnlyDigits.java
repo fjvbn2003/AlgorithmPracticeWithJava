@@ -13,6 +13,10 @@ class CheckingContainesOnlyDigits{
         System.out.println(ans);
         boolean ans4 = containsOnlyDigits_functional("31afsd23213");
         System.out.println(ans2);
+        boolean ans5 = containsOnlyDigits_regular_expression("3123213");
+        System.out.println(ans);
+        boolean ans6 = containsOnlyDigits_regular_expression("31afsd23213");
+        System.out.println(ans2);
         return;
     }
     // Solution 1
@@ -30,5 +34,10 @@ class CheckingContainesOnlyDigits{
     public static boolean containsOnlyDigits_functional(String str){
         return !str.chars()
             .anyMatch(n-> !Character.isDigit(n));
+    }
+    // Solution 3
+    // Using string match (regular expression)
+    public static boolean containsOnlyDigits_regular_expression(String str){
+       return str.matches("[0-9]+");
     }
 }
