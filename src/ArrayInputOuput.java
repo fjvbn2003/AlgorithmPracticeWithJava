@@ -12,6 +12,7 @@ public class ArrayInputOuput {
         }
         for(int i=0; i<N; i++){
             System.out.print(Score[i]+" ");
+            
         }
 
     }
