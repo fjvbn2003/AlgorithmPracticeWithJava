@@ -34,7 +34,7 @@ public class BOJ1167 {
     }
 
     public static void main(String[] args) throws FileNotFoundException {
-        System.setIn(new FileInputStream("AlgorithimPracticeWithJava/src/resources/input.txt"));
+        System.setIn(new FileInputStream("src/resources/input.txt"));
         Scanner sc = new Scanner(System.in);
         Tree = new ArrayList<ArrayList<Node>>();
         V = sc.nextInt();
